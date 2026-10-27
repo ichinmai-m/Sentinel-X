@@ -151,7 +151,7 @@ honeypot/
 
 ### 1. Clone & Set Up Environment
 ```bash
-git clone https://github.com/ichinmai-m/Sentinel-X..git
+git clone https://github.com/ichinmai-m/Sentinel-X.git
 cd honeypot
 
 # Create virtual environment (recommended)
