@@ -1,0 +1,106 @@
+# ==============================================================================
+# Git Ignore - Sentinel.X Honeypot & Decoy Node
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Python & Virtual Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+.venv/
+env/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ------------------------------------------------------------------------------
+# 2. SSL Certificates & Private Keys
+# ------------------------------------------------------------------------------
+*.pem
+*.key
+*.crt
+cert.pem
+key.pem
+decoy_side/cert.pem
+decoy_side/key.pem
+
+# ------------------------------------------------------------------------------
+# 3. Databases & Persistent Data
+# ------------------------------------------------------------------------------
+*.db
+*.sqlite
+*.sqlite3
+database/*.db
+decoy_side/database/*.db
+database/honeypot.db
+decoy_side/database/honeypot.db
+
+# ------------------------------------------------------------------------------
+# 4. Logs, Telemetry & ML Datasets
+# ------------------------------------------------------------------------------
+logs/
+decoy_side/logs/
+*.log
+ml_dataset/
+ml_analysis/report.csv
+ml_analysis/report.json
+ml_analysis/report.txt
+
+# ------------------------------------------------------------------------------
+# 5. Uploaded Files & Quarantined Web Shell Malware
+# ------------------------------------------------------------------------------
+uploads/
+decoy_side/uploads/
+uploads/quarantine/
+decoy_side/uploads/quarantine/
+
+# ------------------------------------------------------------------------------
+# 6. Environment Variables & Secret Files
+# ------------------------------------------------------------------------------
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# ------------------------------------------------------------------------------
+# 7. Temporary Scripts & Simulator Files
+# ------------------------------------------------------------------------------
+tmp_*
+*.tmp
+*.temp
+scratch/
+
+# ------------------------------------------------------------------------------
+# 8. IDE & OS System Files
+# ------------------------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ------------------------------------------------------------------------------
+# 9. Vercel & Deployment Build Artifacts
+# ------------------------------------------------------------------------------
+.vercel/
